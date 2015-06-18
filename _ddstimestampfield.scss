@@ -1,0 +1,29 @@
+﻿@import "_config";
+
+/* ==========================================================================
+   ddsTimestampField
+   ========================================================================== */
+
+.DdsTimestampField {
+    font-family: $dds-font-family;
+    font-size: $dds-font-size;
+    height: $dds-input-field-height;
+    border: $dds-input-field-border;
+    padding: $dds-padding;
+}
+
+.DdsTimestampField_Error {
+    @extend .DdsTimestampField;
+    color: $dds-field-error-color;
+    background-color: $dds-field-error-background-color;
+}
+
+.DdsTimestampField_OutputOnly {
+    @extend .DdsTimestampField;
+    border: none;
+}
+
+.DdsTimestampField_Link {
+    @extend .DdsTimestampField;
+    border: none;
+}

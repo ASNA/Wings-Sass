@@ -1,0 +1,11 @@
+﻿@import "_config";
+
+/* ==========================================================================
+   ddsChart
+   ========================================================================== */
+
+.DdsChartPanel {
+    margin-left: $dds-chart-panel-margin-left;
+    margin-right: $dds-chart-panel-margin-right;
+    border: $dds-chart-panel-border;
+}

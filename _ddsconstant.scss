@@ -1,0 +1,16 @@
+﻿@import "_config";
+
+/* ==========================================================================
+   ddsConstant
+   ========================================================================== */
+
+.DdsConstant {
+    font-family: $dds-font-family;
+    font-size: $dds-font-size;
+    padding: $dds-padding;
+}
+
+.DdsConstant_Right  {
+    @extend .DdsConstant;
+	text-align: right; 
+}

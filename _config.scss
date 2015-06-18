@@ -1,0 +1,164 @@
+﻿// ==========================================================================
+//   Framework.css
+// ========================================================================== 
+$dds-font-family: 'Lucida Sans Typewriter', monospace; 
+$dds-font-size: 13px;
+$dds-padding: 0;
+$dds-input-field-border-color: #c0c0c0;
+$dds-input-field-height:  $dds-font-size + 7px;
+$dds-input-field-border: 1px solid $dds-input-field-border-color;
+$dds-field-error-color: white;
+$dds-field-error-background-color: #c00;
+
+// ddsSubfile
+$dds-subfile-width: 100%;
+$dds-subfile-defaultrow-background-color: #f2f2f2;
+$dds-subfile-alternaterow-background-color: white;
+$dds-subfile-candidate-currentrecord-background-color: #ddd;
+$dds-subfile-currentrecord-background-color: #ccc;
+$dds-subfile-moreless-text-align: center;
+$dds-subfile-moreless-line-height: 1.5;
+$dds-subfile-moreless-font-size: 20px;        
+$dds-subfile-moreless-font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
+$dds-subfile-moreless-font-weight: normal;
+$dds-subfile-moreless-font-style: italic;
+$dds-subfile-moreless-height: 32px;
+$dds-subfile-moreless-background-color: white;
+$dds-subfile-moreless-color: blue;
+
+// Calendar
+$dds-calendar-font-family: 'Trebuchet MS', Arial, Tahoma, Sans-serif;
+$dds-calendar-font-size: 8px;
+$dds-calendar-color: black;
+$dds-calendar-background-color: #99ccff;
+$dds-calendar-width: 180px;
+$dds-calendar-height: 140px;
+$dds-calendar-close-cell-font-size: 11px;
+$dds-calendar-title-font-size: 11px;
+$dds-calendar-title-color: white;
+$dds-calendar-date-cell-color: black;
+$dds-calendar-date-cell-background-color: #86aed7;
+$dds-calendar-selected-date-cell-width: 20px;
+$dds-calendar-selected-date-cell-color:  #003366;
+$dds-calendar-selected-date-cell-background-color: #ffff66;
+$dds-calendar-week-day-cell-color: white;
+$dds-calendar-week-day-cell-background-color: #3366cc;
+$dds-calendar-top-row-color: white;
+$dds-calendar-nav-row-color: white;
+$dds-calendar-ex-date-cell-color: #cdcdcd;
+
+// ddsBar
+$dds-bar-min-height: 2.8em;
+$nav-button-text-align: center;
+$nav-button-white-space: nowrap;
+$nav-button-color: #fff;
+$nav-button-vertical-align: middle;
+$nav-button-touchable-min-width: 4em;
+$nav-button-touchable-narrow-min-width: 3em;
+$submit-button-color: white;
+
+// ddsPanel
+$dds-panel-background-color: white;
+$dds-panel-title-color: white;
+$dds-panel-title-white-space: nowrap;
+$dds-panel-title-vertical-align: middle;
+$dds-panel-title-line-height: 2.2em;
+$dds-panel-title-text-align: center;
+
+// ddsList
+$dds-list-list-left: 2%;
+$dds-list-list-padding: 2px;
+$dds-list-list-width: 96%;
+$ddslistlist-background-color: white;
+$dds-list-list-border-radius: 10px;
+$dds-list-list-border: 2px solid black;
+$dds-list-image-width: 64px;
+$dds-list-image-height: 64px;
+$dds-list-chevron-padding-left: 16px;
+$dds-list-chevron-padding-right: 16px;
+
+// ddsChart
+$dds-chart-panel-margin-left: 0.2em;
+$dds-chart-panel-margin-right: 0.2em;
+$dds-chart-panel-border: 0.1em solid black;
+
+// ddsSignature
+$dds-signature-border: 1px dotted #c0c0c0;
+$dds-signature-border-radius: 6px;
+$dds-signature-margin-left: 2%;
+$dds-signature-width: 95%; 
+$dds-sign-link-right: 2%;
+$dds-sign-editor-color: white;
+$ddssign-editor-background-color: #48474f;
+$dds-sign-editor-title-margin-top: 0.5em;
+$dds-sign-editor-title-text-align: center;
+$dds-sign-editor-title-font-size: 1em;
+$dds-sign-editor-title-font-weight: bold;
+$dds-sign-buttons-margin: 1em 1em 1em 1em;
+$dds-sign-buttons-font-size: 0.8em;
+$dds-sign-buttons-background-color:  #48474F;
+$dds-sign-buttons-color: white;
+
+// ddsImage
+$dds-image-choose-height: 2.5em;
+$dds-image-choose-font-size: 0.8em;
+$dds-image-upload-height: 2.5em;
+$dds-image-upload-color: white;
+$dds-image-upload-border-radius: 6px;
+$dds-image-upload-border: 1px solid rgb(180,223,91);
+$dds-image-margin-left: 5px;
+
+// Transparency
+$semi-transparency: 0.7;
+$semi-transparency-IE: $semi-transparency * 100; 
+
+// z-Index relative values
+$top-most-layer: 100;
+$top-layer: 50;
+
+// Images
+$url-spinningwheel: url('../Images/SubmitWait.gif');
+$url-subfile-scrollbar-background-image: url(../Images/SBBK.png); 
+$url-subfile-scrollbar-up-background-image: url(../Images/SBUp.png); 
+$url-subfile-scrollbar-down-background-image: url(../Images/SBDn.png);
+
+// ==========================================================================
+//   Theme.css
+// ========================================================================== 
+$html-font-family: 'Segoe UI', Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+$html-text-size-adjust: 100%;
+$body-font-size: $dds-font-size;
+$body-margin: 0;
+$links-color:  #06c;
+$selection-background-color: #aaa;
+$selection-color: white;
+$selection-text-shadow: none;
+
+//  Layout
+$header-padding: 10px 0;
+$header-width: 960px;
+$header-logo-width: 512px;
+$header-logo-line-height: 0;
+$subfile-scrollbar-width: 20px;
+$drop-down-icon-width: 20px;
+$content-width: $header-width + $subfile-scrollbar-width + (2 * $drop-down-icon-width);
+$main-content-width: 800px + $subfile-scrollbar-width + (2 * $drop-down-icon-width);
+
+// Fkeys
+$function-keys-width: 160px;
+$function-keys-float: left;
+$dds-key-padding: 10px 10px;
+$dds-key-background-color: #f2f2f2;
+$dds-key-hover-background-color: #ddd;
+$dds-key-box-sizing: border-box;
+
+// Window record's layout
+$dds-window-background-color: gray;
+$dds-window-title-height:  $dds-font-size + 7px;
+$dds-window-title-color: white;
+$dds-window-title-backround-color: #333;
+$dds-window-color: white;
+$dds-window-padding: 10px;
+$dds-window-display: inline-block;
+$dds-window-main-content-margin-right: 60px;
+

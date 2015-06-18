@@ -1,0 +1,37 @@
+﻿@import "_config";
+
+/* ==========================================================================
+   ddsBar
+   ========================================================================== */
+
+.DdsBar {
+    width: 100%;
+    min-height: $dds-bar-min-height;
+    z-index: $top-most-layer;
+}
+
+.NavButton, .NavButtonIcon, .NavButtonSymbol {
+    width: auto;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    text-align: $nav-button-text-align;
+    white-space: $nav-button-white-space;
+    color: $nav-button-color;
+    vertical-align: $nav-button-vertical-align;
+}
+
+.NavButton { /* Short text should have a min. width to be touchable */
+    min-width: $nav-button-touchable-min-width;
+}
+
+.NavButtonSymbol { /* One-letter text should have a min. width to be touchable  (narrower than NavButton) */
+    min-width: $nav-button-touchable-narrow-min-width;
+}
+
+.SubmitButton {
+    min-width: $nav-button-touchable-min-width;
+    color: $submit-button-color;
+}

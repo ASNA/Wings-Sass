@@ -1,0 +1,59 @@
+﻿@import "_config";
+
+/* ==========================================================================
+   ddsSubfile
+   ========================================================================== */
+
+.DdsSubfileRecord {
+	width: $dds-subfile-width;
+}
+
+.DefaultRow {
+	background-color: $dds-subfile-defaultrow-background-color;
+}
+
+.AlternateRow {
+	background-color: $dds-subfile-alternaterow-background-color;
+}
+
+.DdsSubfileSBar  {
+	background-image: $url-subfile-scrollbar-background-image; 
+	background-repeat:repeat-y; 
+	cursor:pointer; 
+}
+
+.DdsSubfileSBarUp {
+	background-image: $url-subfile-scrollbar-up-background-image; 
+	background-repeat:no-repeat; 
+}
+
+.DdsSubfileSBarDn {
+	background-image: $url-subfile-scrollbar-down-background-image; 
+	background-repeat:no-repeat; 
+}
+
+/* ddsSubfile Cursor RRN
+   ========================================================================== */
+
+.DdsSubfileCandidateCurrentRecord  {
+	background-color: $dds-subfile-candidate-currentrecord-background-color;
+}
+
+.DdsSubfileCurrentRecord  {
+	background-color: $dds-subfile-currentrecord-background-color;
+}
+
+/* ddsSubfile Less, More (for Touch capable devices)
+   ========================================================================== */
+.DdsSubfileLess, .DdsSubfileMore {
+	text-align: $dds-subfile-moreless-text-align;
+	line-height: $dds-subfile-moreless-line-height;
+	font-size: $dds-subfile-moreless-font-size;        
+	font-family: $dds-subfile-moreless-font-family;
+	font-weight: $dds-subfile-moreless-font-weight;
+	font-style: $dds-subfile-moreless-font-style;
+	height: $dds-subfile-moreless-height;
+	background-color: $dds-subfile-moreless-background-color;
+	color: $dds-subfile-moreless-color;
+}
+

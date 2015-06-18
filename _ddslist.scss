@@ -1,0 +1,41 @@
+﻿@import "_config";
+
+/* ==========================================================================
+   ddsList
+   ========================================================================== */
+
+.DdsList {
+    position: relative;
+    left: 0;
+    font-weight: bold;
+}
+
+.DdsListList {
+    position: relative;
+    left: $dds-list-list-left;
+    padding: $dds-list-list-padding;
+    width: $dds-list-list-width;
+    background-color: $ddslistlist-background-color;
+    border-radius: $dds-list-list-border-radius;
+    border: $dds-list-list-border;
+}
+
+.DdsListList.table {
+    width: 100%;
+}
+
+.DdsListDetail {
+    font-weight: normal;
+}
+
+.DdsListImage {
+    width: $dds-list-image-width;
+    height: $dds-list-image-height;
+    background-image: $url-spinningwheel;
+    background-repeat: no-repeat;
+}
+
+.DdsListChevron {
+    padding-left: $dds-list-chevron-padding-left;
+    padding-right: $dds-list-chevron-padding-right;
+}

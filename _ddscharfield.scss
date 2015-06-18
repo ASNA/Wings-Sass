@@ -1,0 +1,40 @@
+﻿@import "_config";
+
+/* ==========================================================================
+   ddsCharField
+   ========================================================================== */
+
+.DdsCharField {
+    font-family: $dds-font-family;
+    font-size: $dds-font-size;
+    height: $dds-input-field-height;
+    border: $dds-input-field-border;
+    padding: $dds-padding;
+}
+
+.DdsCharField_Error {
+    @extend .DdsCharField;
+    color: $dds-field-error-color;
+    background-color: $dds-field-error-background-color;
+}
+
+.DdsCharField_OutputOnly {
+    @extend .DdsCharField;
+    border: none;
+}
+
+.DdsCharField_Right {
+    @extend .DdsCharField;
+    text-align: right;
+}
+
+.DdsCharField_Right_Error {
+    @extend .DdsCharField_Error;
+    text-align: right;
+}
+
+.DdsCharField_Right_OutputOnly {
+    @extend .DdsCharField_Right;
+    border: none;
+}
+

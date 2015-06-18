@@ -1,0 +1,51 @@
+﻿@import "_config";
+
+/* ==========================================================================
+   ddsSignature
+   ========================================================================== */
+
+.DdsSignature {
+    margin-left: $dds-signature-margin-left;
+    width: $dds-signature-width; 
+    border: $dds-signature-border;
+    -webkit-border-radius: $dds-signature-border-radius;
+}
+
+.DdsSignLink {
+    right: $dds-sign-link-right;
+}
+
+.DdsSignEditor, .DdsSignEditorTitle {
+    margin: 0;
+    padding: 0;
+    border-style: none;
+    color: $dds-sign-editor-color;
+    background-color: $ddssign-editor-background-color;
+}
+
+.DdsSignEditorTitle {
+    border: none;
+    padding: 0;
+    margin-top: $dds-sign-editor-title-margin-top;
+    text-align: $dds-sign-editor-title-text-align;
+    font-size: $dds-sign-editor-title-font-size;
+    font-weight: $dds-sign-editor-title-font-weight;
+}
+
+.DdsSignCancelButton, .DdsSignDoneButton, .DdsSignEraseButton {
+    margin: $dds-sign-buttons-margin;
+    padding: 0;
+    border: none;
+    color: $dds-sign-buttons-color;
+    font-size: $dds-sign-buttons-font-size;
+    background-color: $dds-sign-buttons-background-color;
+}
+
+.DdsSignCancelButton {
+    color: orangered;
+}
+
+.DdsSignDoneButton {
+    font-weight: bold;
+    color: yellow;
+}

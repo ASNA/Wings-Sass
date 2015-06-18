@@ -1,0 +1,34 @@
+﻿@import "_config";
+
+/* ==========================================================================
+   ddsImage
+   ========================================================================== */
+
+.DdsImageChoose {
+    height: $dds-image-choose-height;
+    font-size: $dds-image-choose-font-size;
+}
+
+.DdsImageUpload {
+    height: $dds-image-upload-height;
+    color: $dds-image-upload-color;
+    border-radius: $dds-image-upload-border-radius;
+    border: $dds-image-upload-border;
+    background: rgb(41,154,11); /* Old browsers. VS Designer */
+    background: -moz-linear-gradient(top, rgba(41,154,11,1) 0, rgba(41,154,11,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0,rgba(41,154,11,1)), color-stop(100%,rgba(41,154,11,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(41,154,11,1) 0,rgba(41,154,11,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(41,154,11,1) 0,rgba(41,154,11,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(41,154,11,1) 0,rgba(41,154,11,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(41,154,11,1) 0,rgba(41,154,11,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#299a0b', endColorstr='#299a0b',GradientType=0 ); /* IE6-9 */
+}
+
+.DdsImageUpload:disabled {
+    border-radius: 6px;
+    border: 1px solid gray;
+}
+
+.DdsImage {
+    margin-left: $dds-image-margin-left;
+}

@@ -1,0 +1,35 @@
+﻿@import "_config";
+
+/* ==========================================================================
+   DDS Window Records
+   ========================================================================== */
+
+.DdsInlinePopUpBackground {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: $top-layer; 
+	background-color: $dds-window-background-color;
+	opacity: $semi-transparency; /* Firefox, Chrome */
+	filter: alpha(opacity=$semi-transparency-IE); /* IE */
+}
+.DdsInlinePopUpTable {
+	position: absolute;
+	background-color: $dds-window-color;
+	overflow: hidden;
+	z-index: $top-most-layer;
+	border-collapse: collapse;
+}
+
+.DdsInlinePopUpContent {
+	width: 100%;
+}
+
+.DdsInlinePopUpTitle {
+	padding: 4px 10px;
+	height: $dds-window-title-height;
+	color: $dds-window-title-color;
+	background-color: $dds-window-title-backround-color;
+}

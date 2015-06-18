@@ -1,0 +1,56 @@
+﻿@import "_config";
+
+/* ==========================================================================
+   ddsDecField
+   ========================================================================== */
+
+.DdsDecField {
+    font-family: $dds-font-family;
+    font-size: $dds-font-size;
+    height: $dds-input-field-height;
+    border: $dds-input-field-border;
+    padding: $dds-padding;
+}
+
+.DdsDecField_Error {
+    @extend .DdsDecField;
+    color: $dds-field-error-color;
+    background-color: $dds-field-error-background-color;
+}
+
+.DdsDecField_OutputOnly {
+    @extend .DdsDecField;
+    border: 0;
+}
+
+.DdsDecField_Left {
+    @extend .DdsDecField;
+    text-align: left; 
+}
+
+.DdsDecField_Left_Error {
+    @extend .DdsDecField_Error;
+    text-align: left; 
+}
+
+.DdsDecField_Left_OutputOnly {
+    @extend .DdsDecField_OutputOnly;
+    text-align: left; 
+    border: 0;
+}
+
+.DdsDecField_Right {
+    @extend .DdsDecField;
+    text-align: right; 
+}
+
+.DdsDecField_Right_Error {
+    @extend .DdsDecField_Error;
+    text-align: right; 
+}
+
+.DdsDecField_Right_OutputOnly {
+    @extend .DdsDecField_OutputOnly;
+    text-align: right; 
+    border: 0;
+}

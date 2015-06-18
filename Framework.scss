@@ -1,0 +1,63 @@
+﻿/**
+ * Framework.css 
+ *
+ * This Cascading Stylesheet includes styles that are required by ASNA Wings/Monarch
+ * framework.
+ *
+ * As a rule, do not change the contents of this file.
+ *
+ * If minor changes to site styles are desired, ASNA strongly recommends changing
+ * the Theme.css Cascading Stylesheet, found in the same directory as this file.
+ *
+ * Should you desire to significantly change the branding of your Wings/Monarch project,
+ * ASNA recommends getting the SASS source file structure that will allow you to generate  
+ * Framework.css from https://github.com/ASNA/Wings-Sass,  after you have changed the
+ * parameters described in the _config.scss file.
+ *
+ * To improve performance, you may want to use the "Minified" version of this Cascading 
+ * Stylesheet by getting the SASS source file structure from https://github.com/ASNA/Wings-Sass, 
+ * that will allow you to generate the Framework.min.css, which you can link from your 
+ * MasterPage.master file, replacing the reference to Framework.css.
+ *
+ * To facilitate working with SASS, ASNA recommends installing the Microsoft "Web Essentials"
+ * package for Visual Studio 2013 from here: 
+ *    https://visualstudiogallery.msdn.microsoft.com/56633663-6799-41d7-9df7-0f2a504ca361
+ *
+*/
+
+@import "_config";
+
+@import "_ddsconstant";
+@import "_ddscharfield";
+@import "_ddsdecfield";
+@import "_ddsdecdatefield";
+@import "_ddstimefield";
+@import "_ddstimestampfield";
+
+@import "_ddsrecord";
+@import "_ddswindowrecord";
+@import "_ddssubfile";
+
+@import "_calendar";
+
+@import "_5250";
+
+@import "_ddspanel";
+@import "_ddschart";
+@import "_ddsimage";
+@import "_ddssignature";
+@import "_ddsswitch";
+
+/* When Page submits, cover all elements with a semi-transparent layer to avoid input */
+.SubmitWait {
+	background-color:  LightGray;     
+	opacity: $semi-transparency; /* Firefox, Chrome */
+	filter: alpha(opacity=$semi-transparency-IE); /* IE */
+}
+
+/* If the response has not come within 2 seconds, show a Spinning Wheel */
+.SubmitWait_2Seconds {
+	background-image: $url-spinningwheel;
+	background-repeat: no-repeat;
+	background-position: center;
+}

@@ -1,0 +1,39 @@
+﻿@import "_config";
+
+/* ==========================================================================
+   ddsDateField
+   ========================================================================== */
+
+.DdsDateField {
+    font-family: $dds-font-family;
+    font-size: $dds-font-size;
+    height: $dds-input-field-height;
+    border: $dds-input-field-border;
+    padding: $dds-padding;
+}
+
+.DdsDateField_Error {
+    @extend .DdsDateField;
+	color: $dds-field-error-color;
+	background-color: $dds-field-error-background-color;
+}
+
+.DdsDateField_OutputOnly {
+    @extend .DdsDateField;
+    border: none;
+}
+
+.DdsDateField_Right {
+    @extend .DdsDateField;
+    text-align: right;
+}
+
+.DdsDateField_Right_Error {
+    @extend .DdsDateField_Error;
+    text-align: right;
+}
+
+.DdsDateField_Right_OutputOnly {
+    @extend .DdsDateField;
+    border: none;
+}

@@ -1,0 +1,30 @@
+﻿@import "_config";
+
+/* ==========================================================================
+   ddsDeciDateField
+   ========================================================================== */
+
+.DdsDecDateField {
+    font-family: $dds-font-family;
+    font-size: $dds-font-size;
+    height: $dds-input-field-height;
+    border: $dds-input-field-border;
+    padding: $dds-padding;
+} 
+
+.DdsDecDateField_Right {
+    @extend .DdsDecDateField;
+    text-align: right;
+}
+
+.DdsDecDateField_Error {
+    @extend .DdsDecDateField;
+    color: $dds-field-error-color;
+    background-color: $dds-field-error-background-color;
+}
+
+.DdsDecDateField_OutputOnly {
+    @extend .DdsDecDateField;
+    border: none;
+}
+

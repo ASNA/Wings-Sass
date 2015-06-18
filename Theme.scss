@@ -1,0 +1,312 @@
+﻿/**
+ * Theme.css
+ *
+ * This Cascading Stylesheet includes styles that override the ASNA Wings/Monarch
+ * framework defaults.
+ *
+ * Feel free to customize your site’s styles by changing the contents of this file.
+ *
+ * If overriding the framework defaults is not enough to produce your own branding,
+ * follow the instructions in the header comment of Framework.css, found in the same 
+ * folder as this file, to radically change the Styles of your ASNA Wings website.
+ *
+ * To improve performance, you may want to use the "Minified" version of this Cascading 
+ * Stylesheet by getting the SASS source file structure from: https://github.com/ASNA/Wings-Sass,
+ * that will allow you to generate the Framework.min.css which you can link from your 
+ * MasterPage.master file, replacing the reference to Theme.css.
+ *
+*/
+
+@import "_config";
+
+/* Root
+   ========================================================================== */
+html {
+    font-family: $html-font-family;
+    -moz-text-size-adjust: $html-text-size-adjust;
+    -ms-text-size-adjust: $html-text-size-adjust;
+    -webkit-text-size-adjust: $html-text-size-adjust;
+    text-size-adjust: $html-text-size-adjust;
+}
+
+body {
+    margin: $body-margin;
+    font-size: $body-font-size;
+}
+
+/* Selection
+   ========================================================================== */
+::-moz-selection {
+    background: $selection-background-color;
+    color: $selection-color;
+    text-shadow: $selection-text-shadow;
+}
+
+::selection {
+    background: $selection-background-color;
+    color: $selection-color;
+    text-shadow: $selection-text-shadow;
+}
+
+/* Links
+   ========================================================================== */
+/* Remove gray background color from active links in IE 10 */
+a {
+    background: transparent;
+    color:$links-color;
+}
+
+/* Typography
+   ========================================================================== */
+/* Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome. */
+b,
+strong {
+    font-weight: bold;
+}
+
+/* Address inconsistent and variable font size in all browsers. */
+small {
+    font-size: 80%;
+}
+
+/* Prevent `sub` and `sup` affecting `line-height` in all browsers. */
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* Embedded
+   ========================================================================== */
+/* Remove border when inside `a` element in IE 8/9. */
+img {
+    border: 0;
+}
+
+/* Correct overflow displayed oddly in IE 9. */
+svg:not(:root) {
+    overflow: hidden;
+}
+
+/* Grouping
+   ========================================================================== */
+/* Address differences between Firefox and other browsers. */
+hr {
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+
+/* Address odd `em`-unit font size rendering in all browsers. */
+code,
+kbd,
+pre,
+samp {
+    font-family: Consolas, monospace;
+    font-size: 1em;
+}
+
+/* Used by DdsPanel */
+fieldset {
+    border: 0;
+}
+
+/* Forms
+   ========================================================================== */
+
+/* Address `overflow` set to `hidden` in IE 8/9/10. */
+button {
+    overflow: visible;
+}
+
+/*
+    Address inconsistent `text-transform` inheritance for `button` and `select`.
+    All other form control elements do not inherit `text-transform` values.
+    Correct `button` style inheritance in Firefox, IE 8+, and Opera
+    Correct `select` style inheritance in Firefox.
+*/
+button,
+select {
+    text-transform: none;
+}
+
+/*
+    Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio` and `video` controls.
+    Correct inability to style clickable `input` types in iOS.
+    Improve usability and consistency of cursor style between image-type `input` and others.
+*/
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+/* Re-set default cursor for disabled elements. */
+button[disabled],
+html input[disabled] {
+    cursor: default;
+}
+
+/* Remove inner padding and border in Firefox 4+. */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/* Address Firefox 4+ setting `line-height` on `input` using `!important` in the UA stylesheet. */
+input {
+    line-height: normal;
+}
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+/* Header
+   ========================================================================== */
+#header {
+    margin-left: auto;
+    margin-right: auto;
+    padding: $header-padding;
+    width: $header-width;
+}
+
+#header .logo {
+    margin-left: auto;
+    margin-right: auto;
+    width: $header-logo-width;
+    line-height: $header-logo-line-height;
+}
+
+/* Content
+   ========================================================================== */
+#content {
+    margin-left: auto;
+    margin-right: auto;
+    width: $content-width;
+}
+
+/* Fkeys
+   ========================================================================== */
+#fkeys {
+    width: $function-keys-width;
+    float: $function-keys-float;
+}
+
+/* Horizontal layout */
+#fkeys .DdsKey {
+    display: block;
+    width: 100%;
+}
+
+.DdsKey {
+    -webkit-box-sizing: $dds-key-box-sizing;
+	-moz-box-sizing: $dds-key-box-sizing;
+	box-sizing: $dds-key-box-sizing;
+    border: none;
+    padding: $dds-key-padding;
+    text-align: left;
+    background-color: $dds-key-background-color;
+    // letter-spacing: $dds-letter-spacing;
+}
+
+.DdsKey:hover {
+    background-color: $dds-key-hover-background-color;
+}
+
+/* MainContent
+   ========================================================================== */
+#main-content {
+    width: $main-content-width;
+    float: right;
+}
+
+/* Window records
+   ========================================================================== */
+
+.FKeyWinPH {
+    visibility: hidden;
+    width: 0;
+    margin-left: -400px;
+}
+
+.DdsInlinePopUpContent #content.window {
+    width: auto;
+    padding: $dds-window-padding;
+    display: $dds-window-display;
+    white-space: nowrap;
+}
+
+.DdsInlinePopUpContent #fkeys.window {
+    vertical-align: top;
+    display: $dds-window-display;
+    float: none;
+}
+
+.DdsInlinePopUpContent #main-content.window {
+    margin-right: $dds-window-main-content-margin-right;
+    width: auto;
+    display: $dds-window-display;
+    float: none;
+}
+
+/* Footer
+   ========================================================================== */
+#footer {
+    margin-left: auto;
+    margin-right: auto;
+    width: $header-width;
+}
+
+/* ==========================================================================
+   Utility classes
+   ========================================================================== */
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.no-vert-margin {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.no-overflow {
+    overflow: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}

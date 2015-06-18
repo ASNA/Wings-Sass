@@ -1,0 +1,79 @@
+﻿@import "_config";
+
+/* ==========================================================================
+   Calendar for ddsDateTime
+   ========================================================================== */
+.CalendarTable {
+	border-collapse: collapse;
+	font-family: $dds-calendar-font-family;
+	font-size: $dds-calendar-font-size;
+	text-align: center;
+	color: $dds-calendar-color;
+	cursor: default;
+	background-color: $dds-calendar-background-color;
+	width: $dds-calendar-width;
+	height: $dds-calendar-height;
+}
+
+.CalendarCloseCell {
+	font-size: $dds-calendar-close-cell-font-size;
+}
+
+.CalendarTitle {
+	font-size : $dds-calendar-title-font-size;
+	color: $dds-calendar-title-color;
+}
+
+.CalendarPrevYear {
+	font-size : $dds-calendar-title-font-size;
+}
+
+.CalendarPrevMonth {
+	font-size : $dds-calendar-title-font-size;
+}
+
+.CalendarNextMonth {
+	font-size : $dds-calendar-title-font-size;
+}
+
+.CalendarNextYear {
+	font-size : $dds-calendar-title-font-size;
+}
+
+.CalendarDateCell {
+	width: inherit;
+	font-size: $dds-calendar-title-font-size;
+	color: $dds-calendar-date-cell-color;
+	background-color: $dds-calendar-date-cell-background-color;
+	cursor: pointer;
+}
+
+.CalendarSelDateCell {
+	width: inherit;
+	font-size: $dds-calendar-title-font-size;
+	color:$dds-calendar-selected-date-cell-color;
+	background-color: $dds-calendar-selected-date-cell-background-color;
+	cursor: pointer;
+}
+
+.CalendarWeekDayCell {
+	width: $dds-calendar-selected-date-cell-width;
+	font-size: $dds-calendar-title-font-size;
+	color: $dds-calendar-week-day-cell-color;
+	background-color: $dds-calendar-week-day-cell-background-color;
+}
+
+.CalendarTopRow {
+	color: $dds-calendar-top-row-color;
+}
+
+.CalendarNavRow {
+	font-size : $dds-calendar-title-font-size;
+	color: $dds-calendar-nav-row-color;
+}
+
+.CalendarExDateCell {
+	font-size : $dds-calendar-title-font-size;
+	background-color: $dds-calendar-ex-date-cell-color;
+	cursor: pointer;
+}

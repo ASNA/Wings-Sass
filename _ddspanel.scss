@@ -1,0 +1,21 @@
+﻿@import "_config";
+
+/* ==========================================================================
+   ddsPanel
+   ========================================================================== */
+
+fieldset {
+    border: 0;
+}
+
+.DdsPanel {
+    background-color: $dds-panel-background-color;
+}
+
+.PanelTitle, .PanelTitle_OutputOnly {
+    color: $dds-panel-title-color;
+    white-space: $dds-panel-title-white-space;
+    vertical-align: $dds-panel-title-vertical-align;
+    line-height: $dds-panel-title-line-height;
+    text-align: $dds-panel-title-text-align;
+}
