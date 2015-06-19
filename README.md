@@ -31,7 +31,7 @@ The Wings-Sass project, in addition to producing the Framework.css and Theme.css
 
 To use the minified CSS, all you need to do is copy these files to your ~Themes\Current\Styles folder and update the references on your MasterPage(s) to point to the`.min.css` instead of the `.css`
 
-### Optimization beyound Minification
+### Optimization beyond Minification
 
 When your Monarch/Wings is complete, you may want to review the list of ASNA Web cotrols used, looking for controls that are NOT being used, to remove the related CSS styles. For example, if your Monarch/Wings website does not use the 5250 Terminal Emulator, you can easily remove a big chunk from `Framework.css` maing the size of the minified version even smaller. (Read the section `Removing unused CSS styles to Optimize response time` below)
 
