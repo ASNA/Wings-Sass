@@ -95,7 +95,7 @@ When you use this Wings-Sass project, you may want to update your MasterPage(s) 
 
 ### Removing unused CSS Styles to Optimize response time.
 
-Let's assume that after completing your Monarch/Wings website, reight before testing, you have determined that 5250 Terminal support is not needed.
+Let's assume that after completing your Monarch/Wings website, right before testing, you have determined that 5250 Terminal support is not needed.
 
 To remove unused CSS syles, do the following:
 
