@@ -32,7 +32,7 @@ To use the minified CSS, all you need to do is copy these files to your ~Themes\
 
 ### Optimization beyond Minification
 
-When your Monarch/Wings is complete, you may want to review the list of ASNA Web cotrols used, looking for controls that are NOT being used, to remove the related CSS styles. For example, if your Monarch/Wings website does not use the 5250 Terminal Emulator, you can easily remove a big chunk from `Framework.css` making the size of the minified version even smaller. (Read the section `Removing unused CSS styles to Optimize response time` below)
+When your Monarch/Wings site is complete, you may want to review the list of ASNA Web Controls used for controls that are NOT being used, to remove the related CSS styles. For example, if your Monarch/Wings website does not use the 5250 Terminal Emulator, you can easily remove a big chunk from `Framework.css` making the size of the minified version even smaller. (Read the section `Removing Unused CSS Styles to Optimize Response Time` below).
 
 
 ## Installation
