@@ -1,13 +1,12 @@
 ﻿@import "_config";
+@import "mixins/_ddscommon";
 
 /* ==========================================================================
    ddsConstant
    ========================================================================== */
 
 .DdsConstant {
-    font-family: $dds-font-family;
-    font-size: $dds-font-size;
-    padding: $dds-padding;
+    @include dds-field($dds-font-family, $dds-font-size, $dds-input-field-height, none, $dds-padding);
 }
 
 .DdsConstant_Right  {

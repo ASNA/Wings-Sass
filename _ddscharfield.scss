@@ -1,15 +1,12 @@
 ﻿@import "_config";
+@import "mixins/_ddscommon";
 
 /* ==========================================================================
    ddsCharField
    ========================================================================== */
 
 .DdsCharField {
-    font-family: $dds-font-family;
-    font-size: $dds-font-size;
-    height: $dds-input-field-height;
-    border: $dds-input-field-border;
-    padding: $dds-padding;
+    @include dds-field($dds-font-family, $dds-font-size, $dds-input-field-height, $dds-input-field-border, $dds-padding);
 }
 
 .DdsCharField_Error {
