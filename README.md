@@ -93,7 +93,7 @@ When you use this Wings-Sass project, you may want to update your MasterPage(s) 
     ```
 4. Finally, review any other Master pages (such as MasterPage.Window.master), and repeat steps 2 and 3 (above).    
 
-### Removing unused CSS Styles to Optimize response time.
+### Removing Unused CSS Styles to Optimize Response Time.
 
 Let's assume that after completing your Monarch/Wings website, right before testing, you have determined that 5250 Terminal support is not needed.
 
