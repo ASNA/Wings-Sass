@@ -9,9 +9,9 @@ ASNA Monarch/Wings websites contain two basic Cascading Style Sheets (CSS), name
 These CSS files are created in the folder: ~Themes\Current\Styles folder, *where ~ represents the root website folder.*
 
 #### Framework.css 
-Defines the CSS classes that the ASNA Web Controls will use. All the ASNA Web controls are named with the prefix Dds, like DdsChanField, DddsConstant, etc.
+Defines the CSS classes that the ASNA Web Controls will use. The names of all ASNA Web controls share the prefix “Dds,” like DdsCharField, DdsConstant, etc.
 
-Given that Monarch/Wings websites pages (displayfiles) are produced by importing display specifications by reading DDS source members, the Framework.css has been carefully selected with styles that produce Web Pages with high fidelity to the legacy positions and length of fields designed for the IBMi. In particular, for constants and fields to align, the Framework font style is set a monospaced family, and all field's styles are set to work on a grid-like display.
+Given that Monarch/Wings website pages (displayfiles) are produced by importing display specifications from DDS source members, Framework.css contains styles that have been carefully selected to produce Web Pages with high fidelity to the legacy positions and field lengths designed for the IBM i. In particular, for constants and fields to align, the Framework font styles are set to a monospaced family, and all fields’ styles are set to work on a grid-like display.
 
 As a rule, do not change the contents of this file.
 
@@ -19,17 +19,16 @@ As a rule, do not change the contents of this file.
 Defines the CSS classes that establish the overall website style. 
 Other styles in Theme.css,
 
-1. Define a particular company's branding. There are components of Monarch/Wings Web page, that may be rendered using a more modern style, such as function key menus, Popu-up Window, and other container chrome labels.
+1. Define a particular company's branding. There are components of Monarch/Wings Web page that may be rendered using a more modern style, such as function key menus, Pop-up Windows, and other container labels.
 2. Override the CSS classes defined in Framework.css. 
 
 ### Minifying CSS Resources
 
-A very simple way to improve the performance (reducing the time a website response page to be transmitted from the server to the client device), is a technique called "Minifying" a resource. 
+"Minifying"  a resource is a very simple way to improve performance (reducing the time a website response page takes to be transmitted from the server to the client device).
 
-The process of minification constist of reducing the size of a resource (in this case the CSS file) without losing any of the required syntax imposed by the CSS standard.
-The Wings-Sass project, in addition to producing the Framework.css and Theme.css, also produce the minified CSS files: Framework.min.css and Theme.min.css.
+The process of minification consists of reducing the size of a resource (in this case the CSS file) without losing any of the required syntax imposed by the CSS standard. The Wings-Sass project, in addition to producing the Framework.css and Theme.css, also produce the minified CSS files: Framework.min.css and Theme.min.css.
 
-To use the minified CSS, all you need to do is copy these files to your ~Themes\Current\Styles folder and update the references on your MasterPage(s) to point to the`.min.css` instead of the `.css`
+To use the minified CSS, all you need to do is copy these files to your ~Themes\Current\Styles folder and update the references on your MasterPage(s) to point to the `.min.css` instead of the `.css`
 
 ### Optimization beyond Minification
 
@@ -46,12 +45,12 @@ When your Monarch/Wings is complete, you may want to review the list of ASNA Web
 6. To facilitate working with Sass, install the Microsoft "Web Essentials" package for Visual Studio 2013 from here: 
    https://visualstudiogallery.msdn.microsoft.com/56633663-6799-41d7-9df7-0f2a504ca361
 
-Notice that all the files in this repository have the extension `.scss`. This is the extension that identifies the file as Sass (Syntactically Awesome Cascasing Style Sheet). Note also that most of the files start with `_` (underscore). `scss` files that DO NOT start with `_` (underscore) will produce automatically a `css` file with same name. In addition, a `.min.css` file is created by the Sass compiler, with an efficient (compact) version of the corresponding `css` file.
+Notice that all the files in this repository have the extension `.scss`. This extension identifies the file as Sass (Syntactically Awesome Cascasing Style Sheet). Note also that most of the files start with `_` (underscore). `scss` files that DO NOT start with `_` (underscore) will automatically produce a `css` file with same name. In addition, a `.min.css` file is created by the Sass compiler, with an efficient (compact) version of the corresponding `css` file.
 For more information on Sass, please refer to http://sass-lang.com
 
 ## Usage
 
-If the installation is complete, your folder ~Themes\Current\Styles will have a new `Framework.css`, `Framework.min.css`, `Theme.css` and `Theme.min.css` files.
+If the installation is complete, your folder ~Themes\Current\Styles will have new `Framework.css, Framework.min.css, Theme.css` and `Theme.min.css` files.
 
 Locate the file '_config.scss` in the ~Themes\Current\Styles folder.
 
@@ -59,7 +58,7 @@ This file lists a series of constants used by the CSS class definitions in all t
 
 `$dds-field-error-background-color: #c00;`
 
-One of the CSS classes that uses that constant, is:
+One of the CSS classes that uses that constant is:
 
 
 ```
@@ -72,7 +71,7 @@ One of the CSS classes that uses that constant, is:
 
 Other CSS classes defined in this project share that constant. 
 
-To customize your Framework.css and Theme.css, change the value associated with the constants, as soon as you save the _config.scss, you can verify that the resulting `Framework.css`, `Framework.min.css`, `Theme.css` and `Theme.min.css` files are automatically updated.
+To customize your Framework.css and Theme.css, change the value associated with the constants; as soon as you save the _config.scss, you can verify that the resulting `Framework.css, Framework.min.css, Theme.css` and `Theme.min.css` files are automatically updated.
 
 ### Update your MasterPage(s)
 
