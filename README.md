@@ -11,7 +11,7 @@ These CSS files are created in the folder: ~Themes\Current\Styles folder, *where
 #### Framework.css 
 Defines the CSS classes that the ASNA Web Controls will use. All the ASNA Web controls are named with the prefix Dds, like DdsChanField, DddsConstant, etc.
 
-Given that Monarch/Wings websites pages (displayfiles) are produced by importing display specifications by reading DDS source members, the Framework.css has been carfully selected with styles that produce a Web Pages with high filelity to the legacy positions and length of fields designed for the IBMi. In particular, for constants and fields to align, the Framework font style is set a monospaced family, and all field's styles are set to work on a grid-like display.
+Given that Monarch/Wings websites pages (displayfiles) are produced by importing display specifications by reading DDS source members, the Framework.css has been carefully selected with styles that produce Web Pages with high fidelity to the legacy positions and length of fields designed for the IBMi. In particular, for constants and fields to align, the Framework font style is set a monospaced family, and all field's styles are set to work on a grid-like display.
 
 As a rule, do not change the contents of this file.
 
@@ -22,7 +22,7 @@ Other styles in Theme.css,
 1. Define a particular company's branding. There are components of Monarch/Wings Web page, that may be rendered using a more modern style, such as function key menus, Popu-up Window, and other container chrome labels.
 2. Override the CSS classes defined in Framework.css. 
 
-### Minifing CSS Resources
+### Minifying CSS Resources
 
 A very simple way to improve the performance (reducing the time a website response page to be transmitted from the server to the client device), is a technique called "Minifying" a resource. 
 
