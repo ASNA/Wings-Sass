@@ -48,6 +48,8 @@
 @import "_ddssignature";
 @import "_ddsswitch";
 
+@import "_ddstable";
+
 /* When Page submits, cover all elements with a semi-transparent layer to avoid input */
 .SubmitWait {
 	background-color:  LightGray;     

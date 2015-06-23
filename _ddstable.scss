@@ -1,0 +1,103 @@
+﻿@import "_config";
+@import "mixins/_ddscommon";
+
+/* ==========================================================================
+   ddsTable
+   ========================================================================== */
+
+.DdsTable {
+    font: $dds-table-font;
+    background: $dds-table-background;
+    border: $dds-table-border;
+    @include border-radius($dds-table-border-radius);
+}
+
+.DdsTable div {
+    overflow: $dds-table-div-overflow;
+}
+
+.DdsTable table {
+    border-collapse: $dds-table-table-border-collapse;
+    width: $dds-table-table-width;
+}
+
+.DdsTable table td, .DdsTable table th {
+    padding: $dds-table-table-td-th-padding;
+}
+
+.DdsTable table thead th {
+    font-size: $dds-table-table-thead-th-font-size;
+    font-weight: $dds-table-table-thead-th-font-weight;
+    border-left: $dds-table-table-thead-th-border-left;
+    background: $dds-table-table-thead-th-background;
+    background: $dds-table-table-thead-th-background-moz;
+    filter: $dds-table-table-thead-th-filter;
+    background-color: $dds-table-table-thead-th-color-start;
+    color: $dds-table-table-thead-th-color;
+}
+
+.DdsTable table thead th.CharColumn {
+    text-align: $dds-table-table-thead-th-charcolumn-text-align;
+}
+
+.DdsTable table thead th.BinaryColumn,
+.DdsTable table thead th.PackedColumn,
+.DdsTable table thead th.ZonedColumn {
+    text-align: $dds-table-table-thead-th-other-columns-text-align;
+}
+
+.DdsTable table thead th:first-child {
+    border: $dds-table-table-thead-th-first-child-border;
+}
+
+.DdsTable table tbody tr.DdsTableGroupHeader th {
+    font-size: $dds-table-table-tbody-tr-dds-table-group-header-th-font-size;
+    font-weight: $dds-table-table-tbody-tr-dds-table-group-header-th-font-weight;
+    border-left: $dds-table-table-tbody-tr-dds-table-group-header-th-border-left;
+    background: $dds-table-table-tbody-tr-dds-table-group-header-th-background;
+    background: $dds-table-table-tbody-tr-dds-table-group-header-th-background-moz;
+    filter: $dds-table-table-tbody-tr-dds-table-group-header-th-filter;
+    background-color: $dds-table-table-tbody-tr-dds-table-group-header-th-background-color;
+    color: $dds-table-table-tbody-tr-dds-table-group-header-th-color;
+    text-align: left;
+}
+
+.DdsTable table tbody td {
+    font-size: $dds-table-table-tbody-td-font-size;
+    font-weight: $dds-table-table-tbody-td-font-weight;
+    border-left: $dds-table-table-tbody-td-border-left;
+    color: $dds-table-table-tbody-td-color;
+}
+
+.DdsTable table tbody td.CharColumn {
+    text-align: $dds-table-table-tbody-td-charcolumn-text-align;
+}
+
+.DdsTable table tbody td.BinaryColumn,
+.DdsTable table tbody td.PackedColumn,
+.DdsTable table tbody td.ZonedColumn {
+    text-align: $dds-table-table-tbody-td-other-columns-text-align;
+}
+
+.DdsTable table tbody .alt td {
+    background: $dds-table-table-tbody-alt-td-background;
+    color: $dds-table-table-tbody-alt-td-color;
+}
+
+.DdsTable table tbody tr:hover:not(.DdsTableGroupHeader) {
+    background: $dds-table-table-tbody-tr-hover-not-dds-table-group-header-background;
+    color: $dds-table-table-tbody-tr-hover-not-dds-table-group-header-color;
+}
+
+.DdsTable table tbody tr.selected {
+    background: $dds-table-table-tbody-tr-selected-background;
+    color: $dds-table-table-tbody-tr-hover-not-dds-table-group-header-color;
+}
+
+.DdsTable table tbody td:first-child {
+    border-left: $dds-table-table-tbody-td-first-child-border-left;
+}
+
+.DdsTable table tbody tr:last-child td {
+    border-bottom: $dds-table-table-tbody-tr-last-child-td-border-bottom;
+}
