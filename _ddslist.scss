@@ -39,3 +39,10 @@
     padding-left: $dds-list-chevron-padding-left;
     padding-right: $dds-list-chevron-padding-right;
 }
+
+.DdsListIcon {
+    width: $dds-list-image-width;
+    height: $dds-list-image-height;
+    background-image: $url-spinningwheel;
+    background-repeat:no-repeat;
+}

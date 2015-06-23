@@ -9,11 +9,8 @@
     font: $dds-table-font;
     background: $dds-table-background;
     border: $dds-table-border;
+    width: $dds-table-width;
     @include border-radius($dds-table-border-radius);
-}
-
-.DdsTable div {
-    overflow: $dds-table-div-overflow;
 }
 
 .DdsTable table {
@@ -36,13 +33,13 @@
     color: $dds-table-table-thead-th-color;
 }
 
-.DdsTable table thead th.CharColumn {
+.DdsTable table thead th.DdsTableCharColumn {
     text-align: $dds-table-table-thead-th-charcolumn-text-align;
 }
 
-.DdsTable table thead th.BinaryColumn,
-.DdsTable table thead th.PackedColumn,
-.DdsTable table thead th.ZonedColumn {
+.DdsTable table thead th.DdsTableBinaryColumn,
+.DdsTable table thead th.DdsTablePackedColumn,
+.DdsTable table thead th.DdsTableZonedColumn {
     text-align: $dds-table-table-thead-th-other-columns-text-align;
 }
 
@@ -50,7 +47,7 @@
     border: $dds-table-table-thead-th-first-child-border;
 }
 
-.DdsTable table tbody tr.DdsTableGroupHeader th {
+.DdsTable table tbody tr.DdsTableGroupHeading th {
     font-size: $dds-table-table-tbody-tr-dds-table-group-header-th-font-size;
     font-weight: $dds-table-table-tbody-tr-dds-table-group-header-th-font-weight;
     border-left: $dds-table-table-tbody-tr-dds-table-group-header-th-border-left;
@@ -69,13 +66,13 @@
     color: $dds-table-table-tbody-td-color;
 }
 
-.DdsTable table tbody td.CharColumn {
+.DdsTable table tbody td.DdsTableCharColumn {
     text-align: $dds-table-table-tbody-td-charcolumn-text-align;
 }
 
-.DdsTable table tbody td.BinaryColumn,
-.DdsTable table tbody td.PackedColumn,
-.DdsTable table tbody td.ZonedColumn {
+.DdsTable table tbody td.DdsTableBinaryColumn,
+.DdsTable table tbody td.DdsTablePackedColumn,
+.DdsTable table tbody td.DdsTableZonedColumn {
     text-align: $dds-table-table-tbody-td-other-columns-text-align;
 }
 
@@ -84,14 +81,9 @@
     color: $dds-table-table-tbody-alt-td-color;
 }
 
-.DdsTable table tbody tr:hover:not(.DdsTableGroupHeader) {
-    background: $dds-table-table-tbody-tr-hover-not-dds-table-group-header-background;
-    color: $dds-table-table-tbody-tr-hover-not-dds-table-group-header-color;
-}
-
-.DdsTable table tbody tr.selected {
+.DdsTable table tbody tr.DdsTableSelectedRow {
     background: $dds-table-table-tbody-tr-selected-background;
-    color: $dds-table-table-tbody-tr-hover-not-dds-table-group-header-color;
+    color: $dds-table-table-tbody-tr-selected-color;
 }
 
 .DdsTable table tbody td:first-child {
