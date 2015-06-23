@@ -11,8 +11,8 @@
 
 .DdsDateField_Error {
     @extend .DdsDateField;
-	color: $dds-field-error-color;
-	background-color: $dds-field-error-background-color;
+    color: $dds-field-error-color;
+    background-color: $dds-field-error-background-color;
 }
 
 .DdsDateField_OutputOnly {
@@ -32,5 +32,41 @@
 
 .DdsDateField_Right_OutputOnly {
     @extend .DdsDateField;
+    border: none;
+}
+
+/*
+   DdsDateFieldNonAbsolute (with their _Right_XXX and _OutputOnly appended
+   class names) are used by the Toolbox icon, when dragging and dropping
+   to Web Form Designer onto a non-absolute containter.     
+   ========================================================================== */
+.DdsDateFieldNonAbsolute {
+    @include dds-field($dds-font-family, $dds-font-size, $dds-input-field-height, $dds-input-field-border, $dds-padding);
+    width: $dds-date-field-non-absolute-width;
+}
+
+.DdsDateFieldNonAbsolute_Error {
+    @extend .DdsDateFieldNonAbsolute;
+    color: $dds-field-error-color;
+    background-color: $dds-field-error-background-color;
+}
+
+.DdsDateFieldNonAbsolute_OutputOnly {
+    @extend .DdsDateFieldNonAbsolute;
+    border: none;
+}
+
+.DdsDateFieldNonAbsolute_Right {
+    @extend .DdsDateFieldNonAbsolute;
+    text-align: right;
+}
+
+.DdsDateFieldNonAbsolute_Right_Error {
+    @extend .DdsDateFieldNonAbsolute_Error;
+    text-align: right;
+}
+
+.DdsDateFieldNonAbsolute_Right_OutputOnly {
+    @extend .DdsDateFieldNonAbsolute_Right;
     border: none;
 }

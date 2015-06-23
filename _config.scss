@@ -10,6 +10,9 @@ $dds-input-field-border: 1px solid $dds-input-field-border-color;
 $dds-field-error-color: white;
 $dds-field-error-background-color: #c00;
 
+// ddsDateField
+$dds-date-field-non-absolute-width: 70% /* input text 70%, button 30% of parent DIV */;
+
 // ddsSubfile
 $dds-subfile-width: 100%;
 $dds-subfile-defaultrow-background-color: #f2f2f2;

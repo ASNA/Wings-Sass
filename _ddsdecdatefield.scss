@@ -2,7 +2,7 @@
 @import "mixins/_ddscommon";
 
 /* ==========================================================================
-   ddsDeciDateField
+   ddsDecDateField
    ========================================================================== */
 
 .DdsDecDateField {
@@ -25,3 +25,38 @@
     border: none;
 }
 
+/*
+   DdsDecDateFieldNonAbsolute (with their _Right_XXX and _OutputOnly appended
+   class names) are used by the Toolbox icon, when dragging and dropping
+   to Web Form Designer onto a non-absolute containter.     
+   ========================================================================== */
+.DdsDecDateFieldNonAbsolute {
+    @include dds-field($dds-font-family, $dds-font-size, $dds-input-field-height, $dds-input-field-border, $dds-padding);
+    width: $dds-date-field-non-absolute-width;
+}
+
+.DdsDecDateFieldNonAbsolute_Error {
+    @extend .DdsDecDateFieldNonAbsolute;
+	color: $dds-field-error-color;
+	background-color: $dds-field-error-background-color;
+}
+
+.DdsDecDateFieldNonAbsolute_OutputOnly {
+    @extend .DdsDecDateFieldNonAbsolute;
+    border: none;
+}
+
+.DdsDecDateFieldNonAbsolute_Right {
+    @extend .DdsDecDateFieldNonAbsolute;
+    text-align: right;
+}
+
+.DdsDecDateFieldNonAbsolute_Right_Error {
+    @extend .DdsDecDateFieldNonAbsolute_Error;
+    text-align: right;
+}
+
+.DdsDecDateFieldNonAbsolute_Right_OutputOnly {
+    @extend .DdsDecDateFieldNonAbsolute_Right;
+    border: none;
+}
