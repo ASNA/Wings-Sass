@@ -7,6 +7,7 @@
 
 .DdsDecField {
     @include dds-field($dds-font-family, $dds-font-size, $dds-input-field-height, $dds-input-field-border, $dds-padding);
+    text-align: right; 
 }
 
 .DdsDecField_Error {
@@ -36,18 +37,3 @@
     border: 0;
 }
 
-.DdsDecField_Right {
-    @extend .DdsDecField;
-    text-align: right; 
-}
-
-.DdsDecField_Right_Error {
-    @extend .DdsDecField_Error;
-    text-align: right; 
-}
-
-.DdsDecField_Right_OutputOnly {
-    @extend .DdsDecField_OutputOnly;
-    text-align: right; 
-    border: 0;
-}
