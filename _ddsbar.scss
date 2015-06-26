@@ -1,4 +1,6 @@
 ﻿@import "_config";
+@import "mixins/_ddscommon";
+@import "mixins/_ddsbar";
 
 /* ==========================================================================
    ddsBar
@@ -8,30 +10,30 @@
     width: 100%;
     min-height: $dds-bar-min-height;
     z-index: $top-most-layer;
-}
-
-.NavButton, .NavButtonIcon, .NavButtonSymbol {
-    width: auto;
-    overflow: hidden;
-    -ms-text-overflow: ellipsis;
-    -o-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-    text-decoration: none;
-    text-align: $nav-button-text-align;
-    white-space: $nav-button-white-space;
-    color: $nav-button-color;
-    vertical-align: $nav-button-vertical-align;
+    background-color: $dds-bar-background-color;
+    @include linear-gradient($dds-bar-background-color-start,$dds-bar-background-color-stop);
 }
 
 .NavButton { /* Short text should have a min. width to be touchable */
-    min-width: $nav-button-touchable-min-width;
+    @include nav-button($nav-button-width, $nav-button-touchable-min-width, $nav-button-height, $nav-button-padding, $nav-button-margin-top, 
+                        $nav-button-border, $nav-button-line-height, $nav-button-font-family, $nav-button-font-size, $nav-button-font-weight, 
+                        $nav-button-overflow, $nav-button-text-overflow, $nav-button-text-decoration, $nav-button-text-align, 
+                        $nav-button-white-space, $nav-button-color, $nav-button-vertical-align);
+    @include border-radius($nav-button-border-radius);
+    @include linear-gradient($nav-button-background-color-start,$nav-button-background-color-stop);
 }
 
 .NavButtonSymbol { /* One-letter text should have a min. width to be touchable  (narrower than NavButton) */
+    @extend .NavButton;
     min-width: $nav-button-touchable-narrow-min-width;
 }
 
 .SubmitButton {
-    min-width: $nav-button-touchable-min-width;
-    color: $submit-button-color;
+    @include submit-button($submit-button-font-size, $submit-button-font-weight, $dds-bar-min-height, $nav-button-touchable-min-width, $submit-button-color);
+    @include border-radius($submit-button-border-radius);
+    @include linear-gradient($submit-button-background-color-start,$submit-button-background-color-stop);
+}
+
+.SignOnButton, .RightAlignButton {
+    float: right;
 }

@@ -1,0 +1,31 @@
+﻿@mixin nav-button( $width, $min-width, $height, $padding, $margin-top, $border, $line-height, $font-family, $font-size, $font-weight, $overflow, $text-overflow, $text-decoration, $text-align, $white-space, $color, $vertical-align ) {
+    width: $width;
+    min-width: $min-width;
+    height: $height;
+    padding: $padding;
+    margin-top: $margin-top;
+    border: $border;
+    line-height: $line-height;
+    font-family: $font-family;
+    font-size: $font-size;
+    font-weight: bold;
+    overflow: $overflow;
+    -ms-text-overflow: $text-overflow;
+    -o-text-overflow: $text-overflow;
+    text-overflow: $text-overflow;
+    text-decoration: $text-decoration;
+    text-align: $text-align;
+    white-space: $white-space;
+    color: $color;
+    vertical-align: $vertical-align;
+}
+
+@mixin submit-button($font-size, $font-weight, $height, $min-width, $color) {
+    font-size: $font-size;
+    font-weight: $font-weight;
+    height: $height;
+    min-width: $min-width;
+    color: $color;
+}
+
+

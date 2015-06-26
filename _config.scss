@@ -52,16 +52,44 @@ $dds-calendar-ex-date-cell-color: #cdcdcd;
 
 // ddsBar
 $dds-bar-min-height: 2.8em;
+$dds-bar-background-color: maroon;
+$dds-bar-background-color-start:maroon;
+$dds-bar-background-color-stop: #cc0000;
+$nav-button-width: auto;
+$nav-button-margin-top: 0.2em;
 $nav-button-text-align: center;
 $nav-button-white-space: nowrap;
 $nav-button-color: #fff;
 $nav-button-vertical-align: middle;
 $nav-button-touchable-min-width: 4em;
 $nav-button-touchable-narrow-min-width: 3em;
+$nav-button-border-radius: 6px;
+$nav-button-height: 2.8em;
+$nav-button-padding: 0 5px;
+$nav-button-border: 1px solid #ed6c45;
+$nav-button-line-height: 28px;
+$nav-button-font-family: inherit;
+$nav-button-font-size: 0.8em;
+$nav-button-font-weight: bold;
+$nav-button-overflow: hidden;
+$nav-button-text-overflow: ellipsis;
+$nav-button-text-decoration: none;
+$nav-button-background-color-start: #ff9933;
+$nav-button-background-color-stop: #cc6600;
+$submit-button-font-size: 0.8em;
+$submit-button-font-weight: bold;
 $submit-button-color: white;
+$submit-button-border-radius: 6px;
+$submit-button-background-color-start: #3ead7b;
+$submit-button-background-color-stop:  #17754B;
 
 // ddsPanel
+$dds-panel-fieldset-font-size: 1.2em;
+$dds-panel-padding: 2px;
+$dds-panel-border: 2px solid gray;
+$dds-panel-border-radius: 10px;
 $dds-panel-background-color: white;
+$dds-panel-title-font-size: 1em;
 $dds-panel-title-color: white;
 $dds-panel-title-white-space: nowrap;
 $dds-panel-title-vertical-align: middle;
