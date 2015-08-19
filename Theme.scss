@@ -238,12 +238,6 @@ input {
 /* Window records
    ========================================================================== */
 
-.FKeyWinPH {
-    visibility: hidden;
-    width: 0;
-    margin-left: -400px;
-}
-
 .DdsInlinePopUpContent #content.window {
     width: auto;
     padding: $dds-window-padding;
@@ -251,10 +245,8 @@ input {
     white-space: nowrap;
 }
 
-.DdsInlinePopUpContent #fkeys.window {
-    vertical-align: top;
-    display: $dds-window-display;
-    float: none;
+.DdsInlinePopUpContent #fkeys.window { /* WindowWidth taken from DDS does not account for FKey button area: hide them. */
+    display: none;
 }
 
 .DdsInlinePopUpContent #main-content.window {
