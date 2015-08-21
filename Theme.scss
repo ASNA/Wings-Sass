@@ -221,7 +221,6 @@ input {
     padding: $dds-key-padding;
     text-align: left;
     background-color: $dds-key-background-color;
-    // letter-spacing: $dds-letter-spacing;
 }
 
 .DdsKey:hover {
@@ -245,8 +244,8 @@ input {
     white-space: nowrap;
 }
 
-.DdsInlinePopUpContent #fkeys.window { /* WindowWidth taken from DDS does not account for FKey button area: hide them. */
-    display: none;
+.DdsInlinePopUpContent #fkeys.window { /* If you prefer to NOT show Function key buttons on Window records, change style to "display: none;" */
+    display: $dds-window-display; // Replace with "$dds-window-fKey-Hidden-display" to NOT show Function key buttons on Window records
 }
 
 .DdsInlinePopUpContent #main-content.window {
