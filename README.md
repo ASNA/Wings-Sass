@@ -42,11 +42,14 @@ When your Monarch/Wings site is complete, you may want to review the list of ASN
 3. Save the file in a temporary folder on your PC.
 4. Extract the files in the downloaded zip file.
 5. Copy all the files into your Monarch/Wings ~Themes\Current\Styles folder.
-6. To facilitate working with Sass, install the Microsoft "Web Essentials" package for Visual Studio 2013 from here: 
-   https://visualstudiogallery.msdn.microsoft.com/56633663-6799-41d7-9df7-0f2a504ca361
+6. Notice that all the files in this repository have the extension `.scss`. This extension identifies the file as Sass (Syntactically Awesome Cascasing Style Sheet). Note also that except for `Framework.scss` and `Theme.scss` the files in this project start with `_` (underscore). Files that start with underscore do not produce directly a CSS file with the same name (these files are *include* files part of the main Sass files that refer to them).  
 
-Notice that all the files in this repository have the extension `.scss`. This extension identifies the file as Sass (Syntactically Awesome Cascasing Style Sheet). Note also that most of the files start with `_` (underscore). `scss` files that DO NOT start with `_` (underscore) will automatically produce a `css` file with same name. In addition, a `.min.css` file is created by the Sass compiler, with an efficient (compact) version of the corresponding `css` file.
-For more information on Sass, please refer to http://sass-lang.com
+  * Visual Studio 2013: To facilitate working with Sass, install the Microsoft *"Web Essentials"* package for Visual Studio 2013 from here: 
+   https://visualstudiogallery.msdn.microsoft.com/56633663-6799-41d7-9df7-0f2a504ca361 The *"Web Essentials"* package was designed such that right after saving changes to any of the Sass files, the compiler will wake-up and produce a new CSS automatically.
+   
+  * Visual Studio 2015: To facilitate working with Sass, go to "Tools" menu and select "Extensions and Updates" option. On the dialog box that appears, click on the "online" extensions, and look for "Web Compiler". Once the "Web compiler" extension is installed, you can right-click on any of the Sass files in your website, and a "Re-compile file" menu option will be available. Re-compiling a Sass file produces the CSS and min.CSS files. (Note: if you started with Visual Studio 2013, you may have been used to automatic Sass compilation, that method of working with Sass was deprecated - you need to explicitly call the Sass compiler when working with Visual Studio 2015 and"Web Compiler"). 
+  
+  For more information on Sass, please refer to http://sass-lang.com
 
 ## Usage
 
