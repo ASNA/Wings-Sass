@@ -47,9 +47,9 @@ When your Monarch/Wings site is complete, you may want to review the list of ASN
   * Visual Studio 2013: To facilitate working with Sass, install the Microsoft *"Web Essentials"* package for Visual Studio 2013 from here: 
    https://visualstudiogallery.msdn.microsoft.com/56633663-6799-41d7-9df7-0f2a504ca361 The *"Web Essentials"* package was designed such that right after saving changes to any of the Sass files, the compiler will wake-up and produce a new CSS automatically.
    
-  * Visual Studio 2015: To facilitate working with Sass, go to "Tools" menu and select "Extensions and Updates" option. On the dialog box that appears, click on the "online" extensions, and look for "Web Compiler". Once the "Web compiler" extension is installed, you can right-click on any of the Sass files in your website, and a "Re-compile file" menu option will be available. Re-compiling a Sass file produces the CSS and min.CSS files. (Note: if you started with Visual Studio 2013, you may have been used to automatic Sass compilation, that method of working with Sass was deprecated - you need to explicitly call the Sass compiler when working with Visual Studio 2015 and"Web Compiler"). 
-  
-  For more information on Sass, please refer to http://sass-lang.com
+  * Visual Studio 2015: To facilitate working with Sass, go to "Tools" menu and select "Extensions and Updates" option. On the dialog box that appears, click on the "online" extensions, and look for "Web Compiler". Once the "Web compiler" extension is installed, you can right-click on any of the Sass files in your website, and an explicit "Re-compile file" menu option will be available. Re-compiling a Sass file produces the CSS and min.CSS files.
+   
+  Sass is designed to compile the Sass files (producing CSS) as soon as changes on files are saved. For more information on Sass, please refer to http://sass-lang.com
 
 ## Usage
 
