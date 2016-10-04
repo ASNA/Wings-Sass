@@ -52,6 +52,9 @@
 
 @import "_ddstable";
 
+@import "_ddsdecrange";
+
+
 /* When Page submits, cover all elements with a semi-transparent layer to avoid input */
 .SubmitWait {
 	background-color:  LightGray;     

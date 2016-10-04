@@ -1,0 +1,28 @@
+﻿@import "_config";
+
+/* ==========================================================================
+   DdsDecRange
+   ========================================================================== */
+
+.RangeNumericValue {
+    text-align: center;
+    height: 30px;
+    outline: none;
+    border: 1px solid lightgray;
+    background-color: white;
+    font-size: 14px;
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+.RangeStepButton {
+    margin: 0px;
+    width: 34px;
+    color: white;
+    background: #2baee2;
+    border: 0px;
+    padding: 9px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+}

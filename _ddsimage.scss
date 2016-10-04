@@ -28,6 +28,82 @@
     float: $dds-image-upload-float;
 }
 
-.DdsImage {
-    margin-left: $dds-image-margin-left;
+.DdsImage img {
+    background-image: $url-spinningwheel;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.DdsImage .DdsImageSwipeShowNavBars {
+    background-color: $dds-image-navbar-background-color;
+    opacity: $dds-image-navbar-opacity;
+    width: $dds-image-navbar-width;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.DdsImage .DdsImageSwipeShowNavBars.RightBar {
+    background-image: $url-rightarrow;
+}
+
+.DdsImage .DdsImageSwipeShowNavBars.LeftBar {
+    background-image: $url-leftarrow;
+}
+
+.DdsImage div[data-ddsImage-tag] {
+    position: absolute;
+    bottom: $dds-image-imagetag-bottom;
+    width: $dds-image-imagetag-width;
+    left: $dds-image-imagetag-left;
+    margin-left: ($dds-image-imagetag-width / -2);
+    background-color: $dds-image-imagetag-background-color;
+    color: $dds-image-imagetag-color;
+    text-align: $dds-image-imagetag-text-align;
+    padding: $dds-image-imagetag-padding;
+    opacity: $dds-image-imagetag-opacity;
+    @include border-radius($dds-image-imagetag-border-radius);
+}
+
+.DdsImageFullScreen {
+    background-color: $dds-image-fullscreen-background-color;
+}
+
+.DdsImageFullScreen .CloseButton {
+    background-image: $url-closex;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: $dds-image-fullscreen-close-button-top;
+    right: $dds-image-fullscreen-close-button-right;
+    width: $dds-image-fullscreen-close-button-width;
+    height: $dds-image-fullscreen-close-button-height;
+}
+
+.DdsImageFullScreen .DdsImageSwipeShowNavBars {
+    width: $dds-image-fullscreen-navbar-width;
+    background-color: $dds-image-fullscreen-navbar-background-color;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.DdsImageFullScreen .DdsImageSwipeShowNavBars.RightBar {
+    background-image: $url-rightarrow;
+}
+
+.DdsImageFullScreen .DdsImageSwipeShowNavBars.LeftBar {
+    background-image: $url-leftarrow;
+}
+
+.DdsImageFullScreen div[data-ddsImage-tag] {
+    position: absolute;
+    bottom: $dds-image-fullscreen-imagetag-bottom;
+    width: $dds-image-fullscreen-imagetag-width;
+    left: $dds-image-fullscreen-imagetag-left;
+    margin-left: ($dds-image-fullscreen-imagetag-width / 2);
+    background-color: $dds-image-fullscreen-imagetag-background-color;
+    color: $dds-image-fullscreen-imagetag-color;
+    text-align: $dds-image-fullscreen-imagetag-text-align;
+    padding: $dds-image-fullscreen-imagetag-padding;
+    opacity: $dds-image-fullscreen-imagetag-opacity;
+    @include border-radius($dds-image-fullscreen-imagetag-border-radius);
 }

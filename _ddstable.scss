@@ -3,7 +3,7 @@
 
 /* ==========================================================================
    ddsTable
-   ========================================================================== */
+   ==========================================================================*/
 
 .DdsTable {
     font: $dds-table-font;
@@ -11,85 +11,51 @@
     border: $dds-table-border;
     width: $dds-table-width;
     @include border-radius($dds-table-border-radius);
+    border-collapse: $dds-table-border-collapse;
 }
 
 .DdsTable table {
-    border-collapse: $dds-table-table-border-collapse;
     width: $dds-table-table-width;
 }
 
-.DdsTable table td, .DdsTable table th {
-    padding: $dds-table-table-td-th-padding;
+.DdsTableHeading {
+    border-left: $dds-table-heading-border-left;
+    font-size: $dds-table-heading-font-size;
+    font-weight: $dds-table-heading-font-weight;
+    @include linear-gradient($dds-table-heading-color-start,$dds-table-heading-color-stop);
+    color: $dds-table-heading-color;
 }
 
-.DdsTable table thead th {
-    font-size: $dds-table-table-thead-th-font-size;
-    font-weight: $dds-table-table-thead-th-font-weight;
-    border-left: $dds-table-table-thead-th-border-left;
-    background: $dds-table-table-thead-th-background;
-    background: $dds-table-table-thead-th-background-moz;
-    filter: $dds-table-table-thead-th-filter;
-    background-color: $dds-table-table-thead-th-color-start;
-    color: $dds-table-table-thead-th-color;
+.DdsTableIconColumn,
+.DdsTableIconColumnHeading {
+    text-align: $dds-table-iconcolumn-text-align;
 }
 
-.DdsTable table thead th.DdsTableCharColumn {
-    text-align: $dds-table-table-thead-th-charcolumn-text-align;
+.DdsTableCharColumn,
+.DdsTableCharColumnHeading {
+    text-align: $dds-table-charcolumn-text-align;
 }
 
-.DdsTable table thead th.DdsTableBinaryColumn,
-.DdsTable table thead th.DdsTablePackedColumn,
-.DdsTable table thead th.DdsTableZonedColumn {
-    text-align: $dds-table-table-thead-th-other-columns-text-align;
+.DdsTableBinaryColumn,
+.DdsTableBinaryColumnHeading,
+.DdsTablePackedColumn,
+.DdsTablePackedColumnHeading,
+.DdsTableZonedColumn,
+.DdsTableZonedColumnHeading {
+    text-align: $dds-table-other-columns-text-align;
 }
 
-.DdsTable table thead th:first-child {
-    border: $dds-table-table-thead-th-first-child-border;
+.DdsTableGroupHeading {
+    border-left: $dds-table-group-header-border-left;
+    border-left-color: $dds-table-group-header-border-left-color;
+    @include linear-gradient($dds-table-group-header-background-color-start, $dds-table-group-header-background-color-end);
+    color: $dds-table-group-header-color;
+    font-size: $dds-table-group-header-font-size;
+    font-weight: $dds-table-group-header-font-weight;
+    text-align: $dds-table-group-header-text-align;
 }
 
-.DdsTable table tbody tr.DdsTableGroupHeading th {
-    font-size: $dds-table-table-tbody-tr-dds-table-group-header-th-font-size;
-    font-weight: $dds-table-table-tbody-tr-dds-table-group-header-th-font-weight;
-    border-left: $dds-table-table-tbody-tr-dds-table-group-header-th-border-left;
-    background: $dds-table-table-tbody-tr-dds-table-group-header-th-background;
-    background: $dds-table-table-tbody-tr-dds-table-group-header-th-background-moz;
-    filter: $dds-table-table-tbody-tr-dds-table-group-header-th-filter;
-    background-color: $dds-table-table-tbody-tr-dds-table-group-header-th-background-color;
-    color: $dds-table-table-tbody-tr-dds-table-group-header-th-color;
-    text-align: left;
-}
-
-.DdsTable table tbody td {
-    font-size: $dds-table-table-tbody-td-font-size;
-    font-weight: $dds-table-table-tbody-td-font-weight;
-    border-left: $dds-table-table-tbody-td-border-left;
-    color: $dds-table-table-tbody-td-color;
-}
-
-.DdsTable table tbody td.DdsTableCharColumn {
-    text-align: $dds-table-table-tbody-td-charcolumn-text-align;
-}
-
-.DdsTable table tbody td.DdsTableBinaryColumn,
-.DdsTable table tbody td.DdsTablePackedColumn,
-.DdsTable table tbody td.DdsTableZonedColumn {
-    text-align: $dds-table-table-tbody-td-other-columns-text-align;
-}
-
-.DdsTable table tbody .alt td {
-    background: $dds-table-table-tbody-alt-td-background;
-    color: $dds-table-table-tbody-alt-td-color;
-}
-
-.DdsTable table tbody tr.DdsTableSelectedRow {
-    background: $dds-table-table-tbody-tr-selected-background;
-    color: $dds-table-table-tbody-tr-selected-color;
-}
-
-.DdsTable table tbody td:first-child {
-    border-left: $dds-table-table-tbody-td-first-child-border-left;
-}
-
-.DdsTable table tbody tr:last-child td {
-    border-bottom: $dds-table-table-tbody-tr-last-child-td-border-bottom;
+.DdsTableSelectedRow {
+    background: $dds-table-selected-row-background;
+    color: $dds-table-selected-row-color;
 }

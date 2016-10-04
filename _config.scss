@@ -10,6 +10,8 @@ $dds-input-field-border: 1px solid $dds-input-field-border-color;
 $dds-field-error-color: white;
 $dds-field-error-background-color: #c00;
 
+$std-box-border-radius: 3px;
+
 // ddsDateField
 $dds-date-field-non-absolute-width: 70% /* input text 70%, button 30% of parent DIV */;
 
@@ -146,48 +148,64 @@ $dds-image-upload-disabled-background-image: none;
 $dds-image-upload-disabled-background-color: white;
 $dds-image-upload-float: right;
 $dds-image-margin-left: 5px;
+$dds-image-margin-left: 5px;
+$dds-image-navbar-opacity: 0.75;
+$dds-image-navbar-width: 50px;
+$dds-image-navbar-background-color: gray;
+$dds-image-imagetag-bottom: 10px;
+$dds-image-imagetag-width: 50px;
+$dds-image-imagetag-left: 50%;
+$dds-image-imagetag-background-color: black;
+$dds-image-imagetag-color: white;
+$dds-image-imagetag-text-align: center;
+$dds-image-imagetag-padding: 3px;
+$dds-image-imagetag-opacity: 0.6;
+$dds-image-imagetag-border-radius: 6px;
+$dds-image-fullscreen-background-color: black;
+$dds-image-fullscreen-imagetag-bottom: 10px;
+$dds-image-fullscreen-imagetag-width: 50px;
+$dds-image-fullscreen-imagetag-left: 50%;
+$dds-image-fullscreen-imagetag-background-color: black;
+$dds-image-fullscreen-imagetag-color: white;
+$dds-image-fullscreen-imagetag-text-align: center;
+$dds-image-fullscreen-imagetag-padding: 3px;
+$dds-image-fullscreen-imagetag-opacity: 0.6;
+$dds-image-fullscreen-imagetag-border-radius: 6px;
+$dds-image-fullscreen-close-button-top: 10px;
+$dds-image-fullscreen-close-button-right: 10px;
+$dds-image-fullscreen-close-button-width: 46px;
+$dds-image-fullscreen-close-button-height: 46px;
+$dds-image-fullscreen-navbar-width: 50px;
+$dds-image-fullscreen-navbar-background-color: black;
+
 
 // ddsTable
 $dds-table-font: normal 12px/150% 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
 $dds-table-background: white;
 $dds-table-border: 1px solid #800000;
-$dds-table-border-radius: 3px;
+$dds-table-border-radius: $std-box-border-radius;
 $dds-table-width: 100%;
-$dds-table-table-border-collapse: collapse;
+$dds-table-border-collapse: collapse;
 $dds-table-table-width: 100%;
-$dds-table-table-td-th-padding: 3px 10px;
-$dds-table-table-thead-th-font-size: 15px;
-$dds-table-table-thead-th-font-weight: bold;
-$dds-table-table-thead-th-color-start: #800000;
-$dds-table-table-thead-th-color-stop: #cc0000;
-$dds-table-table-thead-th-border-left: 1px solid $dds-table-table-thead-th-color-start;
-$dds-table-table-thead-th-background: webkit-gradient( linear, left top, left bottom, color-stop(0.05, $dds-table-table-thead-th-color-start), color-stop(1, $dds-table-table-thead-th-color-stop) );
-$dds-table-table-thead-th-background-moz: -moz-linear-gradient( center top, $dds-table-table-thead-th-color-start 5%, $dds-table-table-thead-th-color-stop 100% );
-$dds-table-table-thead-th-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#800000', endColorstr='#cc0000');
-$dds-table-table-thead-th-color: white;
-$dds-table-table-thead-th-charcolumn-text-align: left;
-$dds-table-table-thead-th-other-columns-text-align: right;
-$dds-table-table-thead-th-first-child-border: none;
-$dds-table-table-tbody-tr-dds-table-group-header-th-font-size: 13px;
-$dds-table-table-tbody-tr-dds-table-group-header-th-font-weight: bold;
-$dds-table-table-tbody-tr-dds-table-group-header-th-border-left: 1px solid #a70000;
-$dds-table-table-tbody-tr-dds-table-group-header-th-background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, $dds-table-table-thead-th-color-start), color-stop(1, $dds-table-table-thead-th-color-stop) );
-$dds-table-table-tbody-tr-dds-table-group-header-th-background-moz: -moz-linear-gradient( center top, $dds-table-table-thead-th-color-start 5%, $dds-table-table-thead-th-color-stop 100% );
-$dds-table-table-tbody-tr-dds-table-group-header-th-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#800000', endColorstr='#cc0000');
-$dds-table-table-tbody-tr-dds-table-group-header-th-background-color: $dds-table-table-thead-th-color-start;
-$dds-table-table-tbody-tr-dds-table-group-header-th-color: white;
-$dds-table-table-tbody-td-font-size: dds-table-table-thead-th-font-size - 3px;
-$dds-table-table-tbody-td-font-weight: normal;
-$dds-table-table-tbody-td-border-left: 1px solid #f4eded;
-$dds-table-table-tbody-td-color: black;
-$dds-table-table-tbody-td-charcolumn-text-align: left;
-$dds-table-table-tbody-td-other-columns-text-align: right;
-$dds-table-table-tbody-alt-td-background: #ffdbdb;
-$dds-table-table-tbody-alt-td-color: black;
-$dds-table-table-tbody-tr-selected-background: #ffa8a8;
-$dds-table-table-tbody-tr-selected-color: black;
-$dds-table-table-tbody-td-first-child-border-left: none;
-$dds-table-table-tbody-tr-last-child-td-border-bottom: none;
+$dds-table-heading-font-size: 15px;
+$dds-table-heading-font-weight: bold;
+$dds-table-heading-color-start: #800000;
+$dds-table-heading-color-stop: #cc0000;
+$dds-table-heading-border-left: 1px solid $dds-table-heading-color-start;
+$dds-table-heading-color: white;
+$dds-table-iconcolumn-text-align: center;
+$dds-table-group-header-font-size: 13px;
+$dds-table-group-header-font-weight: bold;
+$dds-table-group-header-border-left: 1px solid;
+$dds-table-group-header-border-left-color: #a70000;
+$dds-table-group-header-background-color-start: $dds-table-heading-color-start;
+$dds-table-group-header-background-color-end: $dds-table-heading-color-stop;
+$dds-table-group-header-color: white;
+$dds-table-group-header-text-align: left;
+$dds-table-charcolumn-text-align: left;
+$dds-table-other-columns-text-align: right;
+$dds-table-selected-row-background: #ffa8a8;
+$dds-table-selected-row-color: black;
 
 // Transparency
 $semi-transparency: 0.7;
@@ -199,6 +217,9 @@ $top-layer: 50;
 
 // Images
 $url-spinningwheel: url('../Images/SubmitWait.gif');
+$url-leftarrow: url('../Images/circle-arrow-left.png');
+$url-rightarrow: url('../Images/circle-arrow-right.png');
+$url-closex: url('../Images/circle-x.png');
 $url-subfile-scrollbar-background-image: url(../Images/SBBK.png); 
 $url-subfile-scrollbar-up-background-image: url(../Images/SBUp.png); 
 $url-subfile-scrollbar-down-background-image: url(../Images/SBDn.png);
