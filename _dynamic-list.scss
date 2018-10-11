@@ -1,0 +1,40 @@
+﻿@import "_config";
+@import "mixins/_ddscommon";
+
+/* ==========================================================================
+   DynamicList
+   ========================================================================== */
+
+.dyna-list-dialog {
+    border-color: #969696;
+    border-width: 1px;
+    border-style: solid;
+    padding: 0px;
+}
+
+.dyna-list-form {
+    padding: 5px;
+}
+
+.dyna-list {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 250px;
+}
+
+.dyna-list div:hover {
+    background-color: #f6f6f6;
+    color: black;
+}
+
+.dyna-row-selected {
+    background-color: blue;
+    color: white;
+}
+
+.dyna-row {
+    width: fit-content;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    display: inline-block;
+}
