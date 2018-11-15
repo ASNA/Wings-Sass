@@ -1,11 +1,11 @@
 ﻿// ==========================================================================
 //   Framework.css
-// ========================================================================== 
-$dds-font-family: 'Lucida Sans Typewriter', monospace; 
+// ==========================================================================
+$dds-font-family: 'Lucida Sans Typewriter', monospace;
 $dds-font-size: 13px;
 $dds-padding: 0;
 $dds-input-field-border-color: #c0c0c0;
-$dds-input-field-height:  $dds-font-size + 7px;
+$dds-input-field-height: $dds-font-size + 7px;
 $dds-input-field-border: 1px solid $dds-input-field-border-color;
 $dds-field-error-color: white;
 $dds-field-error-background-color: #c00;
@@ -23,7 +23,7 @@ $dds-subfile-candidate-currentrecord-background-color: #ddd;
 $dds-subfile-currentrecord-background-color: #ccc;
 $dds-subfile-moreless-text-align: center;
 $dds-subfile-moreless-line-height: 1.5;
-$dds-subfile-moreless-font-size: 20px;        
+$dds-subfile-moreless-font-size: 20px;
 $dds-subfile-moreless-font-family: 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
 $dds-subfile-moreless-font-weight: normal;
 $dds-subfile-moreless-font-style: italic;
@@ -32,30 +32,47 @@ $dds-subfile-moreless-background-color: white;
 $dds-subfile-moreless-color: blue;
 
 // Calendar
-$dds-calendar-font-family: 'Trebuchet MS', Arial, Tahoma, Sans-serif;
-$dds-calendar-font-size: 8px;
-$dds-calendar-color: black;
-$dds-calendar-background-color: #99ccff;
-$dds-calendar-width: 180px;
-$dds-calendar-height: 140px;
-$dds-calendar-close-cell-font-size: 11px;
-$dds-calendar-title-font-size: 11px;
-$dds-calendar-title-color: white;
+$dds-calendar-table-border-collapse: separate;
+$dds-calendar-table-border-spacing: 0;
+$dds-calendar-table-text-align: center;
+$dds-calendar-table-cursor: default;
+$dds-calendar-table-width: 283px;
+$dds-calendar-table-height: 350px;
+$dds-calendar-table-font-family: "Lucida Sans Typewriter", monospace;
+$dds-calendar-table-font-size: 8px;
+$dds-calendar-table-background-color: #86aed7;
+$dds-calendar-table-box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.3);
+$dds-calendar-table-border-radius: 4px 4px 4px 4px;
+$dds-calendar-table-border-spacing: 0;
+$dds-calendar-table-color: black;
+$dds-calendar-nav-row-background-color: #fdfdfd;
+$dds-calendar-nav-buttons-font-size: 11px;
+$dds-calendar-date-cell-width: inherit;
+$dds-calendar-date-cell-cursor: pointer;
 $dds-calendar-date-cell-color: black;
+$dds-calendar-title-font-size: 13px;
+$dds-calendar-title-color: #3366CC;
+$dds-calendar-title-text-transform: capitalize;
 $dds-calendar-date-cell-background-color: #86aed7;
-$dds-calendar-selected-date-cell-width: 20px;
-$dds-calendar-selected-date-cell-color:  #003366;
-$dds-calendar-selected-date-cell-background-color: #ffff66;
+$dds-calendar-sel-date-border-radius: 50%;
+$dds-calendar-sel-date-color: #003366;
+$dds-calendar-sel-date-background-color: #ffff66;
+$dds-calendar-sel-date-cell-width: inherit;
+$dds-calendar-sel-date-cell-cursor: pointer;
+$dds-calendar-week-day-cell-width: 20px;
+$dds-calendar-week-day-cell-font-size: 12px;
+$dds-calendar-week-day-cell-line-height: 18px;
+$dds-calendar-week-day-cell-text-transform: capitalize;
 $dds-calendar-week-day-cell-color: white;
 $dds-calendar-week-day-cell-background-color: #3366cc;
-$dds-calendar-top-row-color: white;
-$dds-calendar-nav-row-color: white;
-$dds-calendar-ex-date-cell-color: #cdcdcd;
+$dds-calendar-ex-date-cell-cursor: pointer;
+$dds-calendar-ex-date-cell-color: black;
+$dds-calendar-ex-date-cell-background-color: #cdcdcd;
 
 // ddsBar
 $dds-bar-min-height: 2.8em;
 $dds-bar-background-color: maroon;
-$dds-bar-background-color-start:maroon;
+$dds-bar-background-color-start: maroon;
 $dds-bar-background-color-stop: #cc0000;
 $nav-button-width: auto;
 $nav-button-margin-top: 0.2em;
@@ -83,7 +100,7 @@ $submit-button-font-weight: bold;
 $submit-button-color: white;
 $submit-button-border-radius: 6px;
 $submit-button-background-color-start: #3ead7b;
-$submit-button-background-color-stop:  #17754B;
+$submit-button-background-color-stop: #17754B;
 
 // ddsPanel
 $dds-panel-fieldset-font-size: 1.2em;
@@ -119,7 +136,7 @@ $dds-chart-panel-border: 0.1em solid black;
 $dds-signature-border: 1px dotted #c0c0c0;
 $dds-signature-border-radius: 6px;
 $dds-signature-margin-left: 2%;
-$dds-signature-width: 95%; 
+$dds-signature-width: 95%;
 $dds-sign-link-right: 2%;
 $dds-sign-editor-color: white;
 $ddssign-editor-background-color: #48474f;
@@ -129,7 +146,7 @@ $dds-sign-editor-title-font-size: 1em;
 $dds-sign-editor-title-font-weight: bold;
 $dds-sign-buttons-margin: 1em 1em 1em 1em;
 $dds-sign-buttons-font-size: 0.8em;
-$dds-sign-buttons-background-color:  #48474F;
+$dds-sign-buttons-background-color: #48474F;
 $dds-sign-buttons-color: white;
 
 // ddsImage
@@ -181,7 +198,7 @@ $dds-image-fullscreen-navbar-background-color: black;
 
 // ddsTable
 $dds-table-font: normal 12px/150% 'Lucida Grande', 'Lucida Sans Unicode', Helvetica, Arial, Verdana, sans-serif;
-$dds-table-background: white;
+$dds-table-background: #F3F3F6;
 $dds-table-border: 1px solid #800000;
 $dds-table-border-radius: $std-box-border-radius;
 $dds-table-width: 100%;
@@ -204,12 +221,20 @@ $dds-table-group-header-color: white;
 $dds-table-group-header-text-align: left;
 $dds-table-charcolumn-text-align: left;
 $dds-table-other-columns-text-align: right;
-$dds-table-selected-row-background: #ffa8a8;
+$dds-table-selected-row-background-color: #ffa8a8;
 $dds-table-selected-row-color: black;
+$dds-table-hover-row-background-color: #ddd;
+$dds-table-hover-row-color: black;
+$dds-table-selected-cell-border: 1px solid blue;
+$dds-table-error-cell-border: 1px solid red;
+$dds-table-dialog-error-color: red;
+$dds-table-editable-cell-background-color: white;
+$dds-table-error-row-background-color: lightpink;
+$dds-table-error-row-color: red;
 
 // Transparency
 $semi-transparency: 0.7;
-$semi-transparency-IE: $semi-transparency * 100; 
+$semi-transparency-IE: $semi-transparency * 100;
 
 // z-Index relative values
 $top-most-layer: 100;
@@ -220,31 +245,21 @@ $url-spinningwheel: url('../Images/SubmitWait.gif');
 $url-leftarrow: url('../Images/circle-arrow-left.png');
 $url-rightarrow: url('../Images/circle-arrow-right.png');
 $url-closex: url('../Images/circle-x.png');
-$url-subfile-scrollbar-background-image: url(../Images/SBBK.png); 
-$url-subfile-scrollbar-up-background-image: url(../Images/SBUp.png); 
+$url-subfile-scrollbar-background-image: url(../Images/SBBK.png);
+$url-subfile-scrollbar-up-background-image: url(../Images/SBUp.png);
 $url-subfile-scrollbar-down-background-image: url(../Images/SBDn.png);
 
 // ==========================================================================
 //   Theme.css
-// ========================================================================== 
+// ==========================================================================
 $html-font-family: 'Segoe UI', Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
 $html-text-size-adjust: 100%;
 $body-font-size: $dds-font-size;
 $body-margin: 0;
-$links-color:  #06c;
+$links-color: #06c;
 $selection-background-color: #aaa;
 $selection-color: white;
 $selection-text-shadow: none;
-
-//  Layout
-$header-padding: 10px 0;
-$header-width: 960px;
-$header-logo-width: 512px;
-$header-logo-line-height: 0;
-$subfile-scrollbar-width: 20px;
-$drop-down-icon-width: 20px;
-$content-width: $header-width + $subfile-scrollbar-width + (2 * $drop-down-icon-width);
-$main-content-width: 800px + $subfile-scrollbar-width + (2 * $drop-down-icon-width);
 
 // Fkeys
 $function-keys-width: 160px;
@@ -254,9 +269,20 @@ $dds-key-background-color: #f2f2f2;
 $dds-key-hover-background-color: #ddd;
 $dds-key-box-sizing: border-box;
 
+
+//  Layout
+$header-padding: 10px 0;
+$header-width: 1200px;
+$header-logo-width: $header-width;
+$header-logo-line-height: 0;
+$subfile-scrollbar-width: 20px;
+$drop-down-icon-width: 20px;
+$content-width: $header-width;
+$main-content-width: $header-width - $function-keys-width;
+
 // Window record's layout
 $dds-window-background-color: gray;
-$dds-window-title-height:  $dds-font-size + 7px;
+$dds-window-title-height: $dds-font-size + 7px;
 $dds-window-title-color: white;
 $dds-window-title-backround-color: #333;
 $dds-window-color: white;

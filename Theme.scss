@@ -4,7 +4,7 @@
  * This Cascading Stylesheet includes styles that override the ASNA Wings/Monarch
  * framework defaults.
  *
- * Feel free to customize your site’s styles by changing the contents of this file.
+ * Feel free to customize your site's styles by changing the contents of this file.
  *
  * If overriding the framework defaults is not enough to produce your own branding,
  * follow the instructions in the header comment of Framework.css, found in the same 
@@ -88,6 +88,7 @@ sub {
 
 /* Embedded
    ========================================================================== */
+
 
 /* Correct overflow displayed oddly in IE 9. */
 svg:not(:root) {
@@ -201,7 +202,6 @@ input[type=range]:focus::-webkit-slider-runnable-track {
 }
 
 input[type=range]::-moz-range-track {
-    width: 300px;
     height: 5px;
     background: #ddd;
     border: none;
@@ -222,7 +222,6 @@ input[type=range]:-moz-focusring{
 }
 
 input[type=range]::-ms-track {
-    width: 300px;
     height: 5px;
     
     /*remove bg colour from the track, we'll use ms-fill-lower and ms-fill-upper instead */
@@ -316,7 +315,7 @@ input[type=range]:focus::-ms-fill-upper {
    ========================================================================== */
 #main-content {
     width: $main-content-width;
-    float: right;
+    float: left;
 }
 
 /* Window records
